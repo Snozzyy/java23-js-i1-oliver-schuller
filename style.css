@@ -1,0 +1,23 @@
+body {
+    background-color: #121212;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: #9F73AB;
+    border-color: #9F73AB;
+    border-radius: 4px;
+}
+
+.text {
+    width:66%;
+    text-align: left;
+    margin: auto;
+}
+
+h3 {
+    display: inline;
+    margin-left: 10px;
+}

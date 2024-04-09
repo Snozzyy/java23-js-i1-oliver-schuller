@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Welcome</h1>
+        <form>
+            <input type="text" placeholder="Name">
+            <button>Submit</button>
+        </form>
+    </div>
+    <br><br>
+    <div class="game">
+        <div class="game-info">
+            <h3 id="total-value">Totala värde: 0</h3>
+            <h3 id="round-value">Rundvärde: 0</h3>
+            <h3 id="amount-of-rounds">Antal rundor: 0</h3>
+        </div>
+        <br>
+        <button id="dice-btn">Slå tärningen</button>
+        <button id="freeze">Frys rundan</button><br>
+        <h2 id="dice-value"></h2>
+    </div>
+    <br>
+    <div class="text">
+        <p>Spelets idé är att samla poäng genom att kasta tärningen flera gånger varje gång man är i tur och fortlöpande summera ögonsumman. Slår man en 1:a, förlorar man alla poäng man fått ihop under den aktuella omgången, och turen går vidare till nästa spelare. Så länge man inte slagit en 1:a, kam man välja att avbryta kastandet, och man skriver då in i protokollet den poäng som samlats ihop under omgången.</p>
+        <p>Spelets vinnare är den spelare som först når talet 100 eller högre i protokollet. Om flera spelare når 100 eller mer i samma omgång, vinner den som har fått det högsta talet.</p>
+    </div>
+</body>
+</html>
