@@ -12,9 +12,12 @@ button {
 }
 
 .text {
-    width:66%;
-    text-align: left;
+    width:50%;
     margin: auto;
+}
+
+ol {
+    text-align: left;
 }
 
 h3 {

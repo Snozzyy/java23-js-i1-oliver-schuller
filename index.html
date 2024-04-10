@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pig Game</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <h1>Welcome</h1>
+        <h1>Välkommen</h1>
         <form>
-            <input type="text" placeholder="Name">
-            <button>Submit</button>
+            <input type="text" placeholder="Namn">
+            <button>Skicka</button>
         </form>
     </div>
     <br><br>
@@ -23,14 +23,22 @@
         <button id="freeze">Frys rundan</button><br>
     </div><br>
     <div class="game-info">
-        <h3 id="total-value">Totala värde: 0</h3>
-        <h3 id="round-value">Rundvärde: 0</h3>
+        <h3 id="total-value">Totala poäng: 0</h3>
+        <h3 id="round-value">Rundpoäng: 0</h3>
         <h3 id="amount-of-rounds">Antal rundor: 0</h3>
     </div>
     <br>
     <div class="text">
-        <p>Spelets idé är att samla poäng genom att kasta tärningen flera gånger varje gång man är i tur och fortlöpande summera ögonsumman. Slår man en 1:a, förlorar man alla poäng man fått ihop under den aktuella omgången, och turen går vidare till nästa spelare. Så länge man inte slagit en 1:a, kam man välja att avbryta kastandet, och man skriver då in i protokollet den poäng som samlats ihop under omgången.</p>
-        <p>Spelets vinnare är den spelare som först når talet 100 eller högre i protokollet. Om flera spelare når 100 eller mer i samma omgång, vinner den som har fått det högsta talet.</p>
+        <h2>Spelets mål</h2>
+        Målet i Pig är att nå 100 poäng på så få rundor som möjligt genom att slå tärningen.<br>
+        <h2>Instruktioner</h2>
+        <ol>
+            <li>Slå tärningen.</li>
+            <li>Om tärningan visar en siffra mellan två och sex så sparas siffran som poäng till din rundas totala poäng.</li>
+            <li>Skulle tärningen däremot visa siffran ett så nollställs dina poäng för rundan och en ny runda påbörjas.</li>
+            <li>Du kan välja att frysa rundan och då sparas dina poäng du samlat på dig under rundan och de adderas till din totala poäng.</li>
+            <li>Du vinner spelet när din totala poäng når 100 eller över.</li>
+        </ol>
     </div>
 </body>
 </html>
