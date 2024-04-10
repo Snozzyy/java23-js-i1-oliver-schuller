@@ -7,7 +7,6 @@ const totalValueInfo = document.querySelector("#total-value");
 const roundValueInfo = document.querySelector("#round-value");
 const roundAmountInfo = document.querySelector("#amount-of-rounds");
 const diceValue = document.querySelector("#dice-value");
-
 let totalAmount = 0;
 let roundAmount = 0;
 let rounds = 0;
@@ -16,22 +15,26 @@ form.addEventListener("submit", (event)=>{
     event.preventDefault();
     welcomeText.innerText = "Welcome " + nameInput.value;
     nameInput.value = ""; // Clears input field
+    form.style.display = "none";
 })
 
 diceBtn.addEventListener("click", ()=>{
     const randomInt = Math.floor(Math.random() * 6) + 1; // Generates random value between 1-6
-    guess(randomInt);
+    roll(randomInt);
 })
 
 freezeBtn.addEventListener("click", ()=>{
     stop();
 })
 
-function guess(value) {
+function roll(value) {
     diceValue.innerHTML = "Tärningen visar: " + value;
     if (value != 1) {
         roundAmount += value;
         roundValueInfo.innerHTML = "Rundvärde: " + roundAmount;
+        if (roundAmount + totalAmount >= 100) {
+            alert("You win!");
+        }
     } else {
         roundAmount = 0;
         stop();
